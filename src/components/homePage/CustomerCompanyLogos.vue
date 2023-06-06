@@ -37,6 +37,7 @@ const companies = ref([
         :src="company.url"
         :alt="company.name"
         class="grayscale hover:grayscale-0 transition-all duration-500"
+        loading="lazy"
       />
     </div>
   </div>
