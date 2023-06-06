@@ -68,7 +68,7 @@ const navLinks = ref([
             <RouterLink
               :to="{ name: link.pathName }"
               class="block py-2 pl-3 pr-4 bg-transparent md:p-0"
-              exact-active-class="text-red-700 border-b border-primary-400"
+              exact-active-class="text-primary-400 border-b border-primary-400"
             >
               {{ link.name }}
             </RouterLink>
