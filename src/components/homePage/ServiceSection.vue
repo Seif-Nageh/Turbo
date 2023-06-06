@@ -27,9 +27,9 @@ const services = ref([
 </script>
 
 <template>
-  <div class="container tracking-wider py-8 relative">
+  <div class="container tracking-wider py-8 relative overflow-hidden">
     <Pattern class="absolute" />
-    <Pattern class="absolute right-0" />
+    <Pattern class="absolute right-0 top-1/4" />
     <Pattern class="absolute right-5 bottom-32" />
     <Pattern class="absolute left-12 bottom-10" />
     <h2 class="text-4xl font-semibold">Services</h2>
