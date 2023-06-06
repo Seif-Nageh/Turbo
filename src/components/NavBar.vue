@@ -1,6 +1,22 @@
 <script setup>
 import ArrowRight from "@/assets/icons/ArrowRight.vue";
 import LogoT from "@/assets/icons/LogoT.vue";
+import { ref } from "vue";
+
+const navLinks = ref([
+  {
+    name: "Home",
+    pathName: "home",
+  },
+  {
+    name: "About",
+    pathName: "about",
+  },
+  {
+    name: "Portfolio",
+    pathName: "portfolio",
+  },
+]);
 </script>
 
 <template>
@@ -48,22 +64,13 @@ import LogoT from "@/assets/icons/LogoT.vue";
         <ul
           class="flex flex-col px-4 py-2 md:p-0 mt-4 border border-gray-800 bg-gray-700 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent"
         >
-          <li>
+          <li v-for="link of navLinks" :key="link.name">
             <RouterLink
-              :to="{ name: 'home' }"
-              class="block py-2 pl-3 pr-4 text-white bg-transparent md:p-0"
+              :to="{ name: link.pathName }"
+              class="block py-2 pl-3 pr-4 bg-transparent md:p-0"
               exact-active-class="text-red-700 border-b border-primary-400"
             >
-              Home
-            </RouterLink>
-          </li>
-          <li>
-            <RouterLink
-              :to="{ name: 'about' }"
-              class="block py-2 pl-3 pr-4 text-white bg-transparent md:p-0"
-              exact-active-class="text-red-700 border-b border-primary-400"
-            >
-              About
+              {{ link.name }}
             </RouterLink>
           </li>
         </ul>

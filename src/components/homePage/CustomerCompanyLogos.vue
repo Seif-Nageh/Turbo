@@ -27,7 +27,7 @@ const companies = ref([
 </script>
 
 <template>
-  <div class="grid grid-cols-5 gap-12 container py-8">
+  <div class="grid grid-cols-2 md:grid-cols-5 gap-12 container py-8">
     <div
       v-for="company of companies"
       :key="company.name"
