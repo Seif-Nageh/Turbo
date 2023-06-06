@@ -1,0 +1,11 @@
+@import "./base.css";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary-outline {
+    @apply border border-red-700 px-6 py-4 text-center;
+  }
+}
