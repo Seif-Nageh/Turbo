@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
-const basicUrl = ref("/src/assets/images/customerLogos/");
+const basicUrl = ref(`assets/images/customerLogos/`);
 const companies = ref([
   {
     name: "castello",
@@ -36,7 +36,7 @@ const companies = ref([
       <img
         :src="company.url"
         :alt="company.name"
-        class="grayscale hover:grayscale-0 transition-all duration-500"
+        class="grayscale transition-all duration-300 hover:grayscale-0"
         loading="lazy"
       />
     </div>

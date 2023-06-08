@@ -3,6 +3,7 @@ import HeroSection from "@/components/homePage/HeroSection.vue";
 import CustomerCompanyLogos from "@/components/homePage/CustomerCompanyLogos.vue";
 import portfolioSection from "@/components/homePage/portfolioSection.vue";
 import ServiceSection from "@/components/homePage/ServiceSection.vue";
+import ContactUsSection from "@/components/homePage/ContactUsSection.vue";
 </script>
 
 <template>
@@ -10,4 +11,5 @@ import ServiceSection from "@/components/homePage/ServiceSection.vue";
   <CustomerCompanyLogos />
   <portfolioSection />
   <ServiceSection />
+  <ContactUsSection />
 </template>

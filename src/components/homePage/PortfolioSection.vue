@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
-const basicUrl = ref("/src/assets/images/portfolio/");
+const basicUrl = ref(`assets/images/portfolio/`);
 const companies = ref([
   {
     title: "Saudi German Hospital",
@@ -45,6 +45,7 @@ const companies = ref([
           :src="company.imgSrc"
           alt="saudi"
           class="w-full h-full transition-all duration-300 group-odd:hover:translate-x-2 group-even:hover:-translate-x-2 hover:-translate-y-2"
+          loading="lazy"
         />
       </div>
       <div

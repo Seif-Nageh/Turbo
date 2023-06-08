@@ -6,7 +6,7 @@ const services = ref([
   {
     title: "Marketing",
     description:
-      "Turbo provides market research, social media management, email marketing, and PPC advertising services to help businesses increase",
+      "Turbo provides market research, social media management, email marketing, and PPC advertising services to help businesses increase brand awareness and drive sales.Their marketing experts work closely with clients to tailor their approach to each business's unique needs and goals.",
   },
   {
     title: "Design",
@@ -27,7 +27,10 @@ const services = ref([
 </script>
 
 <template>
-  <div class="container tracking-wider py-8 relative overflow-hidden">
+  <div
+    id="services"
+    class="container tracking-wider py-8 relative overflow-hidden"
+  >
     <Pattern class="absolute" />
     <Pattern class="absolute right-0 top-1/4" />
     <Pattern class="absolute right-5 bottom-32" />
