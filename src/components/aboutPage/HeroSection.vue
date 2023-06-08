@@ -8,7 +8,7 @@
     </div>
     <img
       src="@/assets/images/about.png"
-      class="bg-cover bg-no-repeat w-full -z-0"
+      class="bg-cover bg-no-repeat w-full -z-0 min-h-[10rem]"
       loading="lazy"
     />
   </div>

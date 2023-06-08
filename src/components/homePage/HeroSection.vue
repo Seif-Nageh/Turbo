@@ -26,13 +26,6 @@
       </div>
     </div>
 
-    <!-- <img
-      src="@/assets/images/heroSection.png"
-      alt=""
-      srcset=""
-      class="md:absolute inset-0 bg-cover bg-no-repeat w-full md:h-screen"
-      loading="lazy"
-    /> -->
     <div class="container mt-16 mb-4 md:z-10">
       <p class="text-6xl font-semibold">
         The Power

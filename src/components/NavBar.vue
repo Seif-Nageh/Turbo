@@ -25,7 +25,7 @@ const navLinks = ref([
       class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
     >
       <RouterLink :to="{ name: 'home' }" class="flex items-center">
-        <LogoT class="w-12" />
+        <LogoT class="w-12 fill-primary-400" />
       </RouterLink>
       <div class="flex md:order-2">
         <button

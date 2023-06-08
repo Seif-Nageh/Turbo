@@ -10,12 +10,12 @@ const navLinks = ref([
   },
   {
     name: "About",
-    path: "about",
-    routerLink: true,
+    path: "about#about",
+    routerLink: false,
   },
   {
     name: "Services",
-    path: "#services",
+    path: "/#services",
     routerLink: false,
   },
   {
