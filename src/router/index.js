@@ -6,12 +6,6 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      beforeEnter: () => {
-        router.beforeEach((to, from, next) => {
-          window.scrollTo(0, 0);
-          next();
-        });
-      },
       children: [
         {
           path: "",
@@ -31,6 +25,11 @@ const router = createRouter({
       ],
     },
   ],
+});
+
+router.beforeEach((to, from, next) => {
+  window.scrollTo(0, 0);
+  next();
 });
 
 export default router;
