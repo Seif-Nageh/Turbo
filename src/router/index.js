@@ -6,18 +6,29 @@ const router = createRouter({
   routes: [
     {
       path: "/",
-      name: "home",
-      component: HomeView,
-    },
-    {
-      path: "/about",
-      name: "about",
-      component: () => import("../views/AboutView.vue"),
-    },
-    {
-      path: "/portfolio",
-      name: "portfolio",
-      component: () => import("../views/PortfolioView.vue"),
+      beforeEnter: () => {
+        router.beforeEach((to, from, next) => {
+          window.scrollTo(0, 0);
+          next();
+        });
+      },
+      children: [
+        {
+          path: "",
+          name: "home",
+          component: HomeView,
+        },
+        {
+          path: "about",
+          name: "about",
+          component: () => import("../views/AboutView.vue"),
+        },
+        {
+          path: "portfolio",
+          name: "portfolio",
+          component: () => import("../views/PortfolioView.vue"),
+        },
+      ],
     },
   ],
 });
