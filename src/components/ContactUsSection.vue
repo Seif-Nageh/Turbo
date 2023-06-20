@@ -18,7 +18,15 @@
           />
         </div>
         <div class="w-full py-4">
-          <div
+          <select
+            id=""
+            class="w-full border-0 bg-gray-600/40 text-white/25 flex items-center justify-between p-2.5"
+          >
+            <option selected disabled>Subject</option>
+            <option value="0">Marketing</option>
+            <option value="1">Desgin</option>
+          </select>
+          <!-- <div
             class="w-full border-0 bg-gray-600/40 text-white/25 flex items-center justify-between p-2.5 cursor-pointer"
           >
             Subject
@@ -27,17 +35,21 @@
               height="11"
               viewBox="0 0 18 11"
               fill="none"
+              class="stroke-primary-400"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
                 d="M16.9168 1.83333L9.00016 9.75L1.0835 1.83333"
-                stroke="#FF0000"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
             </svg>
           </div>
+          <div class="bg-gray-600/60 p-4 flex flex-col space-y-4">
+            <div>Marketing</div>
+            <div>Desgin</div>
+          </div> -->
         </div>
         <div class="w-full pt-4">
           <textarea
