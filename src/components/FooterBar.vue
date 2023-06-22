@@ -10,8 +10,8 @@ const navLinks = ref([
   },
   {
     name: "About",
-    path: "about#about",
-    routerLink: false,
+    path: "/about",
+    routerLink: true,
   },
   {
     name: "Services",
@@ -32,23 +32,23 @@ const socialLinks = ref([
   },
   {
     icon: "fa-facebook-f",
-    link: "#",
+    link: "https://www.facebook.com/turbo1sa?mibextid=LQQJ4d",
   },
   {
     icon: "fa-twitter",
-    link: "#",
+    link: "https://twitter.com/turbo1sa",
   },
   {
     icon: "fa-linkedin-in",
-    link: "#",
+    link: "https://www.linkedin.com/company/turboagency/",
   },
   {
     icon: "fa-snapchat",
-    link: "#",
+    link: "https://t.snapchat.com/6HDPv2B4",
   },
   {
     icon: "fa-whatsapp",
-    link: "#",
+    link: "https://wa.me/message/ZUGDFOTR5HDJC1",
   },
 ]);
 </script>
@@ -69,7 +69,7 @@ const socialLinks = ref([
           <a :href="link.path" class="w-1/2 p-2" v-else>{{ link.name }}</a>
         </template>
       </div>
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex flex-col items-center justify-center md:items-start">
         <h6 class="text-lg font-semibold pb-6">Contacts</h6>
         <div class="flex items-center">
           <a
@@ -80,18 +80,18 @@ const socialLinks = ref([
             <font-awesome-icon
               :icon="`fa-brands ${social.icon}`"
               size="xl"
-              class="px-3"
+              class="pr-4"
             />
           </a>
         </div>
-        <p class="text-base py-3">
+        <a href="mailto:sales@turbo.net" target="_blank" class="text-base py-3">
           <font-awesome-icon icon="fa-solid fa-envelope" class="pr-4" />
           sales@turbo.net
-        </p>
-        <p class="text-base">
+        </a>
+        <a href="tel:+966561239211" target="_blank" class="text-base">
           <font-awesome-icon icon="fa-solid fa-phone" class="pr-4" />
           +966 56 123 9211
-        </p>
+        </a>
       </div>
       <div class="flex flex-col justify-center">
         <h6 class="text-lg font-semibold pb-6">Newsletter</h6>

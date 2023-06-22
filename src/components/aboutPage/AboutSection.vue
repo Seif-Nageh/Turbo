@@ -1,7 +1,7 @@
 <template>
-  <div id="about">
+  <div id="about" class="container">
     <h3 class="font-semibold text-3xl">About</h3>
-    <p class="text-2xl pt-6">
+    <p class="text-lg pt-6 md:text-2xl">
       Turbo Marketing Agency , Established Since 2016 in Al-Madinah
       Al-Munawarah. We understand the importance of publicity advertising in all
       field.

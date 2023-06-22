@@ -12,16 +12,16 @@ const companies = ref([
     url: `${basicUrl.value}saudi.png`,
   },
   {
-    name: "golden",
-    url: `${basicUrl.value}golden.png`,
-  },
-  {
     name: "brulee",
     url: `${basicUrl.value}brulee.png`,
   },
   {
     name: "meridien",
     url: `${basicUrl.value}meridien.png`,
+  },
+  {
+    name: "golden",
+    url: `${basicUrl.value}golden.png`,
   },
 ]);
 </script>
@@ -31,7 +31,7 @@ const companies = ref([
     <div
       v-for="company of companies"
       :key="company.name"
-      class="flex items-center justify-center"
+      class="flex items-center justify-center last:col-span-2 last:md:col-span-1"
     >
       <img
         :src="company.url"

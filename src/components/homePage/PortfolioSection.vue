@@ -36,7 +36,7 @@ const companies = ref([
     <div
       v-for="company of companies"
       :key="company.title"
-      class="flex flex-wrap xl:container py-12 group"
+      class="flex flex-wrap xl:container md:py-12 group"
     >
       <div
         class="md:w-5/12 md:group-odd:order-2 md:group-even:order-1 bg-primary-400 aspect-square"

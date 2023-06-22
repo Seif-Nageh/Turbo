@@ -51,7 +51,9 @@ const services = ref([
           <p class="py-5 text-sm md:text-lg lg:text-2xl">
             {{ service.description }}
           </p>
-          <button class="btn-primary md:text-lg md:px-10">Contact us</button>
+          <button class="btn-primary bg-primary-700 md:text-lg md:px-10">
+            Contact us
+          </button>
         </div>
       </div>
     </div>

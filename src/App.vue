@@ -11,9 +11,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="font-Montserrat bg-black text-white">
-    <NavBar />
-    <RouterView />
+  <div class="font-Montserrat bg-black text-white min-h-screen">
+    <div class="font-Montserrat bg-black text-white min-h-screen flex flex-col">
+      <NavBar />
+      <RouterView />
+    </div>
     <FooterBar />
   </div>
 </template>

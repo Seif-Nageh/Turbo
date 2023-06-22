@@ -4,12 +4,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply focus-visible:ring-primary-700 focus:ring-primary-700;
+  }
+}
+
 @layer components {
   .btn-primary-outline {
     @apply border border-primary-400 px-6 py-4 text-center font-semibold;
   }
 
   .btn-primary {
-    @apply bg-primary-700 px-6 py-4 text-center font-semibold;
+    @apply bg-primary-400 px-6 py-4 text-center font-semibold;
   }
 }

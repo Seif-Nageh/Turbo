@@ -1,9 +1,9 @@
 <script setup>
 import LogoFull from "@/assets/icons/LogoFull.vue";
 import HeroSection from "@/components/aboutPage/HeroSection.vue";
-import AboutSection from "../components/aboutPage/AboutSection.vue";
-import MissionSection from "../components/aboutPage/MissionSection.vue";
-import ContactUsSection from "../components/ContactUsSection.vue";
+import AboutSection from "../../components/aboutPage/AboutSection.vue";
+import MissionSection from "../../components/aboutPage/MissionSection.vue";
+import ContactUsSection from "../../components/ContactUsSection.vue";
 </script>
 
 <template>

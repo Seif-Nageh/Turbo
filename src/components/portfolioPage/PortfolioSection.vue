@@ -34,7 +34,7 @@ function tabToggle(tab) {
     </div>
   </div>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12">
-    <div class="relative h-full group" v-for="n of 10" :key="n">
+    <div class="relative h-full group" v-for="n of 9" :key="n">
       <img
         src="@/assets/images/portfolio-card.png"
         alt="golden"
@@ -45,12 +45,12 @@ function tabToggle(tab) {
         class="absolute bg-black/80 inset-0 p-4 h-full text-3xl font-semibold flex flex-col overflow-auto invisible group-hover:visible transition-all ease-in-out"
       >
         Saudi German Hospital
-        <ul class="pt-4 text-base py-4 my-auto">
+        <ul class="pl-4 text-base py-4 my-auto">
           <li class="list-disc list-inside" v-for="n of 6" :key="n">
             Service {{ n }}
           </li>
         </ul>
-        <button class="btn-primary-outline bg-black w-fit mx-auto text-lg">
+        <button class="btn-primary-outline bg-black w-fit mx-auto text-lg py-2">
           See More
         </button>
       </div>

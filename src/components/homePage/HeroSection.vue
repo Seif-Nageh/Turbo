@@ -4,7 +4,7 @@
   >
     <img
       src="@/assets/images/heroSection.png"
-      class="block w-full h-full md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:left-1/2 md:absolute -z-0 inset-0 bg-cover bg-no-repeat invisible md:visible"
+      class="w-full h-full md:-translate-x-1/2 md:-translate-y-1/2 md:top-1/2 md:left-1/2 md:absolute -z-0 inset-0 bg-cover bg-no-repeat hidden md:block"
       alt="Carousel"
       loading="lazy"
     />

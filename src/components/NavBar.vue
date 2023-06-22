@@ -20,7 +20,7 @@ const navLinks = ref([
 </script>
 
 <template>
-  <nav class="bg-gray-700 fixed w-full z-20 top-0 left-0 text-white">
+  <nav class="bg-gray-700 sticky w-full z-20 top-0 left-0 text-white">
     <div
       class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
     >

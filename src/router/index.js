@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import HomeView from "../views/website/HomeView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,14 +15,26 @@ const router = createRouter({
         {
           path: "about",
           name: "about",
-          component: () => import("../views/AboutView.vue"),
+          component: () => import("../views/website/AboutView.vue"),
         },
         {
           path: "portfolio",
           name: "portfolio",
-          component: () => import("../views/PortfolioView.vue"),
+          component: () => import("../views/website/PortfolioView.vue"),
         },
       ],
+    },
+    {
+      path: "/not-found",
+      name: "notFound",
+      component: () => import("../views/ErrorPage.vue"),
+    },
+    {
+      path: "/:pathMatch(.*)*",
+      beforeEnter: (to, from, next) => {
+        return next({ name: "notFound" });
+      },
+      component: () => import("@/views/ErrorPage.vue"),
     },
   ],
 });
