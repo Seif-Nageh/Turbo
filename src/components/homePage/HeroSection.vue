@@ -1,6 +1,6 @@
 <template>
   <div
-    class="min-h-screen flex flex-col-reverse items-center justify-evenly tracking-widest pt-4 md:relative"
+    class="min-h-screen -mt-20 flex flex-col-reverse items-center justify-evenly tracking-widest pt-4 md:relative"
   >
     <img
       src="@/assets/images/heroSection.png"

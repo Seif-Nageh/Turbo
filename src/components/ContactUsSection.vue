@@ -1,62 +1,58 @@
 <template>
-  <div class="container tracking-wider py-8 relative overflow-hidden">
+  <div
+    class="container tracking-wider py-8 relative overflow-hidden"
+    id="contactUs"
+  >
     <h2 class="text-4xl font-semibold">Contact us</h2>
-    <div class="grid grid-cols-1 gap-10 md:grid-cols-2 py-12">
+    <div class="grid grid-cols-1 gap-10 md:grid-cols-2 py-8">
       <form class="flex flex-wrap">
         <div class="py-4 w-full md:pt-0 md:w-1/2 md:pr-4">
           <input
+            required
             type="text"
-            class="w-full border-0 bg-gray-600/40 placeholder:text-white/25 focus:ring-primary-700"
-            placeholder="Email Address"
+            class="w-full border-0 bg-gray-600/40 placeholder:text-white/25 focus:ring-primary-700 focus:bg-gray-800"
+            placeholder="Your Name"
           />
         </div>
         <div class="py-4 w-full md:pt-0 md:w-1/2 md:pl-4">
           <input
+            required
             type="text"
-            class="w-full border-0 bg-gray-600/40 placeholder:text-white/25 focus:ring-primary-700"
-            placeholder="Your Name"
+            class="w-full border-0 bg-gray-600/40 placeholder:text-white/25 focus:ring-primary-700 focus:bg-gray-800"
+            placeholder="Email Address"
           />
         </div>
-        <div class="w-full py-4">
+        <div class="w-full py-4 md:pt-0 md:w-1/2 md:pr-4">
           <select
-            class="w-full border-0 bg-gray-600/40 text-white/25 flex items-center justify-between p-2.5 focus:bg-gray-800 focus:text-white focus:ring-primary-700"
+            required
+            class="w-full border-0 bg-gray-600/40 text-white/25 flex items-center justify-between focus:bg-gray-800 focus:text-white focus:ring-primary-700"
           >
             <option selected disabled>Subject</option>
             <option value="0">Marketing</option>
             <option value="1">Desgin</option>
           </select>
-          <!-- <div
-            class="w-full border-0 bg-gray-600/40 text-white/25 flex items-center justify-between p-2.5 cursor-pointer"
-          >
-            Subject
-            <svg
-              width="18"
-              height="11"
-              viewBox="0 0 18 11"
-              fill="none"
-              class="stroke-primary-400"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M16.9168 1.83333L9.00016 9.75L1.0835 1.83333"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </div>
-          <div class="bg-gray-600/60 p-4 flex flex-col space-y-4">
-            <div>Marketing</div>
-            <div>Desgin</div>
-          </div> -->
         </div>
-        <div class="w-full pt-4">
+        <div class="py-4 w-full md:pt-0 md:w-1/2 md:pl-4">
+          <input
+            type="number"
+            class="w-full border-0 bg-gray-600/40 placeholder:text-white/25 focus:ring-primary-700 focus:bg-gray-800"
+            placeholder="Phone Number"
+          />
+        </div>
+        <div class="w-full pt-4 relative">
           <textarea
+            required
             id="message"
             rows="10"
-            class="block p-2.5 w-full text-sm placeholder:text-white/25 bg-gray-600/40 border-0 focus:ring-primary-700"
-            placeholder="What’s in your mind . . . ?"
+            class="block p-2.5 w-full text-sm placeholder:text-white/25 bg-gray-600/40 border-0 focus:ring-primary-700 focus:bg-gray-800"
+            placeholder="What's in your mind . . . ?"
           ></textarea>
+          <button
+            class="absolute bottom-0 right-0 btn-primary-outline bg-black m-4 py-2 px-8"
+            type="submit"
+          >
+            Submit
+          </button>
         </div>
       </form>
       <iframe

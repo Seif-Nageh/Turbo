@@ -28,12 +28,12 @@ const navLinks = ref([
         <LogoT class="w-12 fill-primary-400" />
       </RouterLink>
       <div class="flex md:order-2">
-        <button
-          type="button"
+        <a
+          href="#contactUs"
           class="btn-primary-outline mr-3 md:mr-0 md:flex items-center hidden"
         >
           Contact Us <ArrowRight class="w-12 inline ml-4" />
-        </button>
+        </a>
         <button
           data-collapse-toggle="navbar-sticky"
           type="button"

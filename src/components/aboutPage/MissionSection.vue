@@ -3,7 +3,7 @@ import LogoT from "@/assets/icons/LogoT.vue";
 </script>
 
 <template>
-  <div class="py-12 container flex flex-wrap" id="mission">
+  <div class="py-8 container flex flex-wrap" id="mission">
     <div class="md:w-4/12 relative">
       <img
         src="@/assets/images/mission.png"

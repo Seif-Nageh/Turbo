@@ -42,11 +42,13 @@ const router = createRouter({
 
 router.beforeEach((to, from, next) => {
   const global = useGlobalStore();
-  global.loadingScreen = true;
-  setTimeout(() => {
-    global.loadingScreen = false;
-  }, 1300);
-  window.scrollTo(0, 0);
+  if (!to.fullPath.includes("#")) {
+    global.loadingScreen = true;
+    setTimeout(() => {
+      global.loadingScreen = false;
+    }, 1300);
+    window.scrollTo(0, 0);
+  }
   next();
 });
 

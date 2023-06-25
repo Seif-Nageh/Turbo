@@ -42,7 +42,7 @@ function tabToggle(tab) {
         loading="lazy"
       />
       <div
-        class="absolute bg-black/80 inset-0 p-4 h-full text-3xl font-semibold flex flex-col overflow-auto invisible group-hover:visible transition-all ease-in-out"
+        class="absolute bg-black/80 inset-0 p-4 h-full text-3xl font-semibold flex flex-col overflow-auto invisible transition-all ease-in-out group-hover:visible"
       >
         Saudi German Hospital
         <ul class="pl-4 text-base py-4 my-auto">

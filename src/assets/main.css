@@ -5,7 +5,9 @@
 @tailwind utilities;
 
 @layer base {
-  body {
+  body,
+  html {
+    scroll-behavior: smooth !important;
     @apply focus-visible:ring-primary-700 focus:ring-primary-700;
   }
 }
