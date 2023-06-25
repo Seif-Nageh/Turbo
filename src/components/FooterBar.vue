@@ -6,22 +6,20 @@ const navLinks = ref([
   {
     name: "Home",
     path: "/",
-    routerLink: true,
   },
   {
     name: "About",
     path: "/about",
-    routerLink: true,
   },
   {
     name: "Services",
-    path: "/#services",
-    routerLink: false,
+    path: "/",
+    hash: "#services",
   },
   {
     name: "Mission",
-    path: "/about#mission",
-    routerLink: false,
+    path: "/about",
+    hash: "#mission",
   },
 ]);
 
@@ -63,10 +61,13 @@ const socialLinks = ref([
       </div>
       <div class="flex flex-wrap content-center justify-center text-center">
         <template v-for="link of navLinks" :key="link.name">
-          <RouterLink :to="link.path" class="w-1/2 p-2" v-if="link.routerLink">
+          <RouterLink
+            :to="{ path: link.path, hash: link.hash }"
+            class="w-1/2 p-2"
+          >
             {{ link.name }}
           </RouterLink>
-          <a :href="link.path" class="w-1/2 p-2" v-else>{{ link.name }}</a>
+          <!-- <a :href="link.path" class="w-1/2 p-2" v-else>{{ link.name }}</a> -->
         </template>
       </div>
       <div class="flex flex-col items-center justify-center md:items-start">
@@ -94,7 +95,9 @@ const socialLinks = ref([
         </a>
       </div>
       <div class="flex flex-col justify-center">
-        <h6 class="text-lg font-semibold pb-6">Newsletter</h6>
+        <h6 class="text-lg font-semibold pb-6 text-center md:text-left">
+          Newsletter
+        </h6>
         <form>
           <label
             for="search"

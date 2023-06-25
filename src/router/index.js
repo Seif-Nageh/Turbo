@@ -41,15 +41,20 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  const global = useGlobalStore();
-  if (!to.fullPath.includes("#")) {
-    global.loadingScreen = true;
-    setTimeout(() => {
-      global.loadingScreen = false;
-    }, 1300);
-    window.scrollTo(0, 0);
-  }
   next();
+  const global = useGlobalStore();
+  global.loadingScreen = true;
+  setTimeout(() => {
+    global.loadingScreen = false;
+  }, 1300);
+  if (!to.fullPath.includes("#")) {
+    window.scrollTo(0, 0);
+  } else {
+    console.log(to.hash);
+    const idName = to.hash.slice(1);
+    console.log(idName);
+    console.log(document.getElementById(idName));
+  }
 });
 
 export default router;
