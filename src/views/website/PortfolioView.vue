@@ -12,7 +12,7 @@ import PortfolioSection from "@/components/portfolioPage/PortfolioSection.vue";
     />
     <div class="container py-12">
       <PortfolioSection />
-      <ContactUsSection />
     </div>
+    <ContactUsSection />
   </div>
 </template>
