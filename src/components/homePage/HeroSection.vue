@@ -9,13 +9,18 @@
       loading="lazy"
     />
     <div class="container mt-16 mb-4 md:z-10">
-      <p class="text-6xl font-semibold">
+      <p class="text-6xl font-semibold pb-10">
         The Power
         <span class="font-light"><br />Of Creativty</span>
       </p>
-      <button class="btn-primary-outline mt-10 text-lg">
+      <a
+        href="./assets/Tubro Agency Contact us.pdf"
+        download
+        target="_blank"
+        class="btn-primary-outline text-lg"
+      >
         Download Portfolio
-      </button>
+      </a>
     </div>
   </div>
 </template>
